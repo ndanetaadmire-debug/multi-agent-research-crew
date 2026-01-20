@@ -1,0 +1,38 @@
+{
+  "name": "multi-agent-research-crew",
+  "version": "1.0.0",
+  "description": "Supervisor-style multi-agent research with LangGraph.js: planner, parallel researchers, critic and writer, with verified citations, budgets and a bounded revision loop.",
+  "scripts": {
+    "demo": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "ci": "npm run typecheck && npm test -- --coverage && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndanetaadmire-debug/multi-agent-research-crew.git"
+  },
+  "author": "Admire T. Ndaneta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndanetaadmire-debug/multi-agent-research-crew/issues"
+  },
+  "homepage": "https://github.com/ndanetaadmire-debug/multi-agent-research-crew#readme",
+  "dependencies": {
+    "@langchain/core": "^1.4.1",
+    "@langchain/langgraph": "^1.7.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^5.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  }
+}
